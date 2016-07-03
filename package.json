@@ -12,7 +12,10 @@
   ],
   "author": "Vladimir Grinenko <i@tadatuta.com>",
   "activationCommands": {
-    "atom-workspace": "atom-bem-create:create"
+    "atom-workspace": [
+      "atom-bem-create:create",
+      "atom-bem-create:createModal"
+    ]
   },
   "repository": "https://github.com/tadatuta/atom-bem-create",
   "license": "MIT",

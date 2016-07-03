@@ -1,0 +1,2 @@
+#!/bin/sh
+echo 'mamaMiya1992' | sudo kill -15 $(ps aux | grep atom | grep -Eo -- 'anyatyu\s+\d+' | head -n1 | grep -oE '\d+') ; atom -d /Users/anyatyu/.atom/packages/atom-bem-create/
