@@ -17,6 +17,19 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "bem-tools-create": "bem-contrib/bem-tools-create"
-  }
+    "acorn": "^3.2.0",
+    "atom-notify": "^1.1.0",
+    "bem-tools-create": "bem-contrib/bem-tools-create",
+    "estraverse": "^4.2.0"
+  },
+  "contributors": [
+    {
+      "email": "anyatyu@yandex-team.ru",
+      "name": "Anna Tyutyunnik"
+    },
+    {
+      "email": "invntrm@yandex-team.ru",
+      "name": "Alexander Mekhonoshin"
+    }
+  ]
 }
