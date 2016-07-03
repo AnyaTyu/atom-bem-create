@@ -4,7 +4,7 @@ Atom plugin for [bem-tools-create](https://github.com/bem-contrib/bem-tools-crea
 
 ## How to use
 
-To create an entity for a string or BEMJSON press `shift-cmd-C`.
+To create an entity for a string or BEMJSON press `shift-cmd-C` or at context menu
 
 For example, `b1__elem1` or `{ block: 'b1', elem: 'e1' }` will create following folders and files
 ```
