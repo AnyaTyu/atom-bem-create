@@ -1,4 +1,4 @@
-const retrieveBemEntityByCursor = require('./parse');
+const retrieveBemEntity = require('./lib/parse');
 const assert = require('assert');
 const color = require('chalk');
 const parse = require('acorn');
@@ -34,13 +34,13 @@ const fileContent = `function foo (){
 }`;
 
 function test(fileContent, cursor, expectedBemString) {
-  retrieveBemEntityByCursor(fileContent, cursor)
+  retrieveBemEntity.underCursor(fileContent, cursor)
   .then(bn => {
     const bemString = bn && bemNaming.stringify(bn);
     expectedBemString && assert.equal(bemString, expectedBemString, 'bem entity string is changed');
-    setTimeout(()=>console.log(color.red.bold('result>') + ' bem entity:', bn, ', bem class:', bn && bemNaming.stringify(bn)),0)
+    setTimeout(()=>console.log(color.green.bold('result>') + ' bem entity:', bn, ', bem class:', bn && bemNaming.stringify(bn)),0)
   })
-  .catch(e=> setTimeout(()=>console.error('\n\ndebug>err>', e), 0))
+  .catch(e=> setTimeout(()=>debug(color.red('err>'), e), 0))
 
 }
 
@@ -52,4 +52,5 @@ Promise.resolve()
 .then(()=>{test(fileContent, {row: 7, column: 52}, 'b__foobar_foo_bar')})
 .then(()=>{test(fileContent, {row: 7, column: 42}, 'b__foobar_foo_bar')})
 .then(()=>{test(fileContent, {row: 8, column: 42}, 'bb__baz_qux')})
-.catch(e=>{setTimeout(()=>console.error('\n\ndebug>err>', e), 0)})
+.then(()=>{test(fileContent, {row: 1, column: 1}, '')})
+.catch(e=>{setTimeout(()=>debug(color.red('err>'), e), 0)})
