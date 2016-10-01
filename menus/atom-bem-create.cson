@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'bem-create'
+      'label': 'Create BEM block'
       'command': 'atom-bem-create:create'
     }
   ]
@@ -13,7 +13,7 @@
       'label': 'bem-create'
       'submenu': [
         {
-          'label': 'create'
+          'label': 'Create BEM block'
           'command': 'atom-bem-create:create'
         }
       ]
