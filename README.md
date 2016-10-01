@@ -4,9 +4,9 @@ Atom plugin for [bem-tools-create](https://github.com/bem-contrib/bem-tools-crea
 
 ## How to use
 
-To create a BEM essence of the line or press the key combination BEMJSON `shift-cmd-C`
+To create a BEM entity of the line or press the key combination BEMJSON `shift-cmd-C`
 
-To open a modal window to enter essence and technologies available keystroke `shift-alt-cmd-C`
+To open a modal window to enter entity and technologies available keystroke `shift-alt-cmd-C`
 or the corresponding item in the context menu
 
 For example, `b1__elem1` or `{ block: 'b1', elem: 'e1' }` will create following folders and files
