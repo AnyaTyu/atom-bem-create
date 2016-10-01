@@ -1,9 +1,9 @@
 # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
 'context-menu':
-  'atom-text-editor': [,
-      {
+  'atom-text-editor': [
+    {
           type: 'separator'
-      },
+    },
     {
       'label': 'bem-create: Create block'
       'command': 'atom-bem-create:create'
@@ -12,17 +12,13 @@
         type: 'separator'
     }
   ]
+
 'menu': [
   {
     'label': 'Packages'
-    'submenu': [
-      'label': 'bem-create'
-      'submenu': [
-        {
-          'label': 'bem-create: Create block'
-          'command': 'atom-bem-create:create'
-        }
-      ]
-    ]
+    'submenu': [{
+      'label': 'bem-create: Create block'
+      'command': 'atom-bem-create:create'
+    }]
   }
 ]
