@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const retrieveBemEntity = require('./lib/parse');
 const assert = require('assert');
 const color = require('chalk');
