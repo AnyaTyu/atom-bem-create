@@ -9,6 +9,7 @@ const fileContent = `function foo (){
     elem: 'elem3'}).block);
     // { block: 'b', elem: "foobar", elemMods: {foo:'bar'} }
     // '{ block: "bb", elem: "baz", modName: "qux" }' // <-- working snippet
+    { block: 'block', mix: [{elem:'mix'}] };
 }`;
 
 const test = Test(fileContent);
@@ -20,4 +21,5 @@ Promise.resolve()
 .then(()=>{test(fileContent, {row: 7, column: 42}, 'b__foobar_foo_bar')})
 .then(()=>{test(fileContent, {row: 8, column: 42}, 'bb__baz_qux')})
 .then(()=>{test(fileContent, {row: 1, column: 1}, '')})
+.then(()=>{test(fileContent, {row: 9, column: 40}, 'block')})
 .catch(test.error)
