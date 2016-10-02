@@ -38,3 +38,17 @@ b1/
 
 Для ввода из контекстного меню поддерживается указание технологий
 Например `b1.{js,css,test,deps}` создаст папку для блока `b1` в технологиях перечисленных в `{}`
+
+
+### Contributors
+
+```
+{
+  "email": "anyatyu@yandex-team.ru",
+  "name": "Anna Tyutyunnik"
+},
+{
+  "email": "invntrm@yandex-team.ru",
+  "name": "Alexander Mekhonoshin"
+}
+```

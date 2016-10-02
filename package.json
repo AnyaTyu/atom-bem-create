@@ -21,7 +21,7 @@
     "atom-notify": "^1.1.0",
     "atom-space-pen-views": "^2.2.0",
     "bem-naming": "^1.0.1",
-    "bem-tools-create": "bem-contrib/bem-tools-create",
+    "bem-tools-create": "bem-tools/bem-tools-create#master",
     "escodegen": "a-x-/escodegen#patch-1",
     "estraverse": "a-x-/estraverse#patch-1",
     "lodash": "^4.13.1",
